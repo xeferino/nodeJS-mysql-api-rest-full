@@ -1,0 +1,42 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Creted</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each  weapons}}
+                    <tr>
+                        <th scope="row"> {{ id }}</th>
+                        <td>{{ title }}</td>
+                        <td>{{ timeago create_at }}</td>
+                        <td>
+                            <a href="/api-weapons/delete/{{ id }}" class="btn btn-md btn-danger">
+                                Delete
+                            </a> 
+                            <a href="/api-weapons/update/{{ id }}" class="btn btn-md btn-secondary">
+                                Edit
+                            </a>
+                        </td>
+                    </tr>
+                    {{ else }}
+                    <tr>
+                        <td colspan="4"> 
+                            <p>There are not weapons saved yeat!</p> 
+                            <br>
+                            <a href="/api-weapons/add" class="btn btn-md btn-dark">Create One!</a> 
+                        </td>
+                    </tr>
+                {{/each}}
+                
+            </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+body {
+    background: #f5f6f5;
+    font-family: 'Oswal',  sans-serif;
+    overflow: hidden;
+}
+
+
+.masthead {
+    color:white;
+    min-height: 30rem;
+    width: 100%;
+    height: 100%;
+    padding-top: 8rem;
+    background: url('/img/background-index.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.masthead h1 {
+    font-size: 4rem;
+    padding: 0;
+    margin: 0;
+} 
+
+.masthead-profile {
+    color:white;
+    min-height: 30rem;
+    width: 100%;
+    height: 100%;
+    padding-top: 8rem;
+    background: url('/img/background.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.masthead-profile h1 {
+    font-size: 4rem;
+    padding: 0;
+    margin: 0;
+} 
